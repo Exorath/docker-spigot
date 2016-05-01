@@ -14,7 +14,7 @@ VOLUME ["/opt/minecraft"]
 # Exposes local port, must be exposed publically with -p xxxx:25565
 EXPOSE 25565
 
-# Copy the execution script, make sure it can be executed and set it as entrpoint
+# Copy the execution script, make sure it can be executed and set it as entrypoint
 COPY ./spigot /usr/local/bin/
 RUN chmod a+x /usr/local/bin/spigot
 ENTRYPOINT ["/usr/local/bin/spigot"]
